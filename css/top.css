@@ -1,0 +1,541 @@
+@charset "utf-8";
+/* ▼ key visual ▼ ************************************************************************/
+div#keyVisual {
+	overflow:  hidden;
+	position: relative;
+	width: 880px; height: 650px;
+}
+
+div#keyVisual p.title {
+	z-index: 1;
+	position: absolute;
+	top: 250px; left: 50px;
+	font-family: 'Megrim', cursive;
+	font-style: italic;
+	font-weight: 120;
+	font-size: 62px;
+	line-height: 75px;
+	color: #18ffff;
+}
+
+div#keyVisual p.sub_title {
+	z-index: 1;
+	position: absolute;
+	top: 420px; left: 50px;
+	font-family: 'Megrim', cursive;
+	font-style: italic;
+	font-weight: 120;
+	font-size: 62px;
+	line-height: 72px;
+	color: #18ffff;
+}
+
+div#keyVisual .key_visual_bg { }
+
+div#keyVisual .key_visual_image {
+	position:  absolute;
+}
+
+@media (max-width: 640px) {
+	div#keyVisual {
+		overflow: hidden;
+		position: relative;
+		width: 100%; min-height: 80%;
+	}
+	
+	div#keyVisual p.title {
+		position: absolute;
+		top: 35%; left: 8%;
+		font-size: 36px;
+		line-height: 44px;
+		color: #FFF;
+	}
+
+	div#keyVisual p.sub_title {
+		position: absolute;
+		top: 54%; left: 8%;
+		font-size: 17px;
+		line-height: 34px;
+		color: #FFF;
+	}
+}
+
+/* ▼ news ▼ ************************************************************************/
+div#news {
+	position: relative;
+	padding: 100px 0 200px;
+	margin-top: -88px;
+	width: 880px;
+	min-height: 600px;
+	box-sizing: border-box;
+}
+
+div#news div#newsPadding {
+	position: relative;
+	padding: 0 80px;
+}
+div#news .title {
+	position: absolute;
+	top: 0px; left: 802px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-style: italic;
+	font-size: 90px;
+	color: #999;
+	-webkit-transform-origin: top left;
+	-moz-transform-origin: top left;
+	-o-transform-origin: top left;
+	-ms-transform-origin: top left;
+	transform-origin: top left;
+
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	transform: rotate(90deg);
+}
+
+div#news dl.news_list {
+	position: relative;
+	margin-top: 20px;
+	width: 576px;
+	border-top: 1px solid #CCC;
+}
+
+div#news dl.news_list dt {
+	padding-top: 15px;
+	line-height: 24px;
+}
+
+div#news dl.news_list dt p.date {
+	float: left;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 14px;
+	color: #999;
+}
+
+div#news dl.news_list dt p.type {
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 14px;
+	color: #ff6a4c;
+	text-align: right;
+}
+
+div#news dl.news_list dd {
+	padding-bottom: 15px;
+	border-bottom: 1px solid #CCC;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 24px;
+	color: #222;
+	text-align: justify;
+}
+
+div#news .news_bg {
+	position: absolute;
+	top: 0;
+	width: 880px;
+	height: 100%;
+	background: #eee;
+	-webkit-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-moz-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-o-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-ms-transform: skewy(-11.2deg) translate3d(0,0,0);
+	transform: skewy(-11.2deg) translate3d(0,0,0);
+}
+
+@media (max-width: 640px) {
+	div#news {
+		padding: 50px 0 180px;
+		width: 100%;
+	}
+	
+	div#news div#newsPadding {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	
+	div#news .title {
+		position: relative;
+		left: 0; top: 0;
+		width: 100%;
+		font-size: 40px;
+		color: #999;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		text-align: right;
+	}
+	
+	div#news dl.news_list {
+		position: relative;
+		margin-top: 20px;
+		width: 100%;
+		border-top: 1px solid #CCC;
+	}
+	
+	div#news .news_bg {
+		width: 100%;
+	}
+	div#news dl.news_list dt {
+		padding-top: 30px;
+		line-height: 28px;
+	}
+	div#news dl.news_list dt p.date { font-size: 14px; }
+	div#news dl.news_list dt p.type { font-size: 14px; }
+	div#news dl.news_list dd { font-size: 12px; line-height: 24px;}
+	
+}
+
+
+/* ▼ results ▼ ************************************************************************/
+div#results {
+	position: relative;
+	padding: 100px 0 200px;
+	margin-top: -77px;
+	width: 880px;
+	box-sizing: border-box;
+}
+
+div#results div#resultsPadding {
+	position: relative;
+	padding: 0 96px;
+}
+div#results .title {
+	position: absolute;
+	top: 30px; left: 174px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 90px;
+	color: #fff;
+	transform-origin: top left;
+	transform: rotate(90deg);
+}
+
+div#results .win { color: #ff6a4c; }
+
+div#results dl.resuts_list {
+	position: relative;
+	margin-left: 120px;
+	width: 576px;
+}
+
+div#results dl.resuts_list dt {
+	margin-bottom: 25px;
+	padding-bottom:  5px;
+	text-align: center;
+	border-bottom:  1px solid #999;
+}
+
+div#results dl.resuts_list dt p.date {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+div#results dl.resuts_list dt p.match_name {
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-size: 13px;
+	line-height: 24px;
+}
+
+div#results dl.resuts_list dd {
+	margin-bottom: 5px;
+	padding-bottom: 23px;
+	border-bottom:  1px solid #999;
+}
+
+div#results dl.resuts_list dd table.player_name {
+	position: relative;
+	width: 576px;
+}
+
+div#results dl.resuts_list dd table.player_name td {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+div#results dl.resuts_list dd table.player_name td .country {
+	margin-top: 6px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+div#results dl.resuts_list dd table.player_name td:nth-child(1) { vertical-align: middle; text-align: left; }
+div#results dl.resuts_list dd table.player_name td:nth-child(2) { vertical-align: middle; text-align: center; }
+div#results dl.resuts_list dd table.player_name td:nth-child(3) { vertical-align: middle; text-align: right; }
+
+div#results dl.resuts_list dd table.points {
+	position: relative;
+	margin: -28px auto 0;
+	width: 160px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+}
+
+div#results dl.resuts_list dd table.points td:nth-child(1) { vertical-align: middle; text-align: left; }
+div#results dl.resuts_list dd table.points td:nth-child(2) { vertical-align: middle; text-align: center; }
+div#results dl.resuts_list dd table.points td:nth-child(3) { vertical-align: middle; text-align: right; }
+
+div#results dl.resuts_list dd table.points td.game_point {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 30px;
+}
+
+div#results dl.resuts_list dd table.points td.point {
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 400;
+	font-size: 13px;
+}
+
+div#results .results_bg {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 880px;
+	height: 100%;
+	-webkit-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-moz-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-o-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-ms-transform: skewy(-11.2deg) translate3d(0,0,0);
+	transform: skewy(-11.2deg) translate3d(0,0,0);
+}
+
+div#results .results_bg .results_image {
+	position: absolute;
+	top: -100px;
+}
+
+@media (max-width: 640px) {
+	div#results {
+		padding: 50px 0 150px;
+		width: 100%;
+	}
+
+	div#results div#resultsPadding {
+		width: 100%;
+		padding: 0 20px;
+		box-sizing: border-box;
+	}
+	
+	div#results .title {
+		position: relative;
+		left: 0; top: 0;
+		width: 100%;
+		font-size: 40px;
+		color: #999;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		text-align: right;
+	}
+	
+	div#results dl.resuts_list {
+		margin-top: 12px;
+		margin-left: 0;
+		width: 100%;
+	}
+	
+	div#results dl.resuts_list dt {
+		margin-top: 6px;
+		padding-bottom: 6px;
+	}
+	
+	div#results dl.resuts_list dt p.date {
+		font-size: 12px;
+		line-height: 24px;
+	}
+
+	div#results dl.resuts_list dt p.match_name {
+		font-family: 'Noto Sans Japanese', sans-serif;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 24px;
+	}
+
+	div#results dl.resuts_list dd table.player_name { width: 100%; }
+	div#results dl.resuts_list dd table.player_name td:nth-child(1) { width: 43%; font-size: 12px; }
+	div#results dl.resuts_list dd table.player_name td:nth-child(2) { width: 4%; }
+	div#results dl.resuts_list dd table.player_name td:nth-child(3) { width: 43%; font-size: 12px; }
+	
+	div#results dl.resuts_list dd table .line {
+		display: inline-block;
+		height: 1px;
+		width: 20px;
+		border-bottom: 2px solid #999;
+	}
+	div#results dl.resuts_list dd table.points {
+		margin: 12px auto;
+		width: 70%;
+		line-height: 28px;
+	}
+	
+	div#results dl.resuts_list dd table.points td:nth-child(1) { width: 33px; }
+	div#results dl.resuts_list dd table.points td:nth-child(2) { width: 34px; }
+	div#results dl.resuts_list dd table.points td:nth-child(3) { width: 33px; }
+	
+	div#results dl.resuts_list dd table.points td.game_point {
+		font-size: 36px;
+	}
+
+	div#results dl.resuts_list dd table.points td.point {
+		font-size: 18px;
+	}
+	
+	div#results .results_bg { width: 100%; }
+	div#results .results_bg .results_image {
+		-webkit-transform: scale(1.5);
+		transform: scale(1.5);
+	}
+}
+
+/* ▼ profile ▼ ************************************************************************/
+div#profile {
+	position: relative;
+	padding: 20px 0 200px;
+	margin-top: -150px;
+	width: 880px;
+	box-sizing: border-box;
+}
+
+div#profile div#profilePadding {
+	position: relative;
+	padding: 0 96px;
+}
+div#profile .title {
+	position: absolute;
+	top: 0px; left: 802px;
+	font-family: 'Montserrat', sans-serif;
+	font-style: italic;
+	font-weight: 200;
+	font-size: 90px;
+	color: #fff;
+	transform-origin: top left;
+	transform: rotate(90deg);
+}
+
+div#profile .name {
+	margin-bottom: 24px;
+	width: 200px;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-size: 21px;
+}
+
+div#profile .left { float: left; }
+div#profile .marR { margin-right: 40px; }
+
+div#profile .profile_area {
+	/*width: 400px;*/
+}
+
+div#profile table.profile_table {
+	width: 200px;
+}
+
+div#profile table.profile_table tr             { border-bottom: 1px solid #999; }
+div#profile table.profile_table tr:first-child { border-top: 1px solid #999; }
+
+div#profile table.profile_table td {
+	padding: 10px 0;
+	font-family: 'Noto Sans Japanese', sans-serif;
+	font-weight: 400;
+	font-size: 11px;
+	line-height:  22px;
+}
+
+div#profile table.profile_table td:nth-child(1) { text-align: left; }
+div#profile table.profile_table td:nth-child(2) { text-align: right; }
+
+div#profile .profile_bg {
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 880px;
+	height: 100%;
+	-webkit-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-moz-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-o-transform: skewy(-11.2deg) translate3d(0,0,0);
+	-ms-transform: skewy(-11.2deg) translate3d(0,0,0);
+	transform: skewy(-11.2deg) translate3d(0,0,0);
+}
+
+div#profile .profile_image {
+	position: absolute;
+}
+
+@media (max-width: 640px) {
+	div#profile {
+		padding: 50px 100px;
+		width: 100%;
+	}
+
+	div#profile div#profilePadding {
+		width: 100%;
+		padding: 0 20px 40px;
+		box-sizing: border-box;
+	}
+	
+	div#profile .title {
+		position: relative;
+		left: 0; top: 0;
+		width: 100%;
+		font-size: 40px;
+		color: #999;
+		-webkit-transform: rotate(0deg);
+		-moz-transform: rotate(0deg);
+		-o-transform: rotate(0deg);
+		-ms-transform: rotate(0deg);
+		transform: rotate(0deg);
+		text-align: right;
+	}
+	
+	div#profile .name {
+		margin-top: 24px;
+		margin-bottom: 24px;
+		font-size: 18px;
+	}
+	
+	div#profile .profile_area { width: 100%; }
+	div#profile table.profile_table { width: 100%; }
+	div#profile .left { float: none; }
+	div#profile .marR { margin-right: 0; margin-bottom: -1px;}
+	div#profile table.profile_table td {
+		padding: 15px 0;
+		font-size: 12px;
+		line-height:  15px;
+	}
+	
+	div#profile .profile_bg { width: 100%; }
+	div#profile .profile_image {
+		top: -100px;
+		-webkit-transform: skewy(11.2deg) translate3d(0,0,0);
+		-moz-transform: skewy(11.2deg) translate3d(0,0,0);
+		-o-transform: skewy(11.2deg) translate3d(0,0,0);
+		-ms-transform: skewy(11.2deg) translate3d(0,0,0);
+		transform: skewy(11.2deg) translate3d(0,0,0);
+	}
+}
